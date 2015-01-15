@@ -69,6 +69,6 @@ if __name__ == "__main__":
 
         total += float(result) * stock['amount']
         cost += stock['cost']
-        done += done + stock['done']
+        done += stock['done']
     print "Cost: %s , Total: %s , Win: %s , Done: %s , Percent: %s" % (
         cost, total, (total + done - cost), done, (total + done - cost) / cost)
