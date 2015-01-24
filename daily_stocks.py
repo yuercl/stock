@@ -2,18 +2,11 @@
 __author__ = 'Long'
 
 import os
-import uuid
 import urllib2
 import json
 
-
 # http://money.finance.sina.com.cn/d/api/openapi_proxy.php/?__s=[[%22jjhq%22,1,40,%22%22,0,%22hs300%22]]&callback=
 # http://money.finance.sina.com.cn/d/api/openapi_proxy.php/?__s=[[%22hq%22,%22hs_a%22,%22%22,0,2,40]]&callback=
-
-def get_file_extension(file):
-    """获取文件后缀名"""
-    return os.path.splitext(file)[1]
-
 
 def mkdir(path):
     """創建文件目录，并返回该目录"""
@@ -22,11 +15,6 @@ def mkdir(path):
     if not os.path.exists(path):
         os.makedirs(path)
     return path
-
-
-def unique_str():
-    """自动生成一个唯一的字符串，固定长度为36"""
-    return str(uuid.uuid1())
 
 
 def get_file(url):
