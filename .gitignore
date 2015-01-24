@@ -2,6 +2,10 @@
 __pycache__/
 *.py[cod]
 
+#image downloaded
+/stocks
+
+
 # C extensions
 *.so
 
@@ -52,3 +56,4 @@ docs/_build/
 
 # PyBuilder
 target/
+
